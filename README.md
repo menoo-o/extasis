@@ -1,2 +1,2 @@
-# extasis-cocina
+# extasis
 Home Based Bakery
