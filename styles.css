@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Cinzel:wght@400..900&display=swap');
+
+/* 
+    colors and fonts
+*/
+
+:root {
+    /* CSS HEX */
+    --claret: #87053bff;
+    --bright-pink-crayola: #f3436fff;
+    --tea-rose-red: #deaaafff;
+    --cornsilk: #f6f1d2ff;
+    --rich-black: #010217ff;
+
+    /* fonts */
+    --headings: "Allura", sans-serif;
+    --body-font: "Cinzel", monospace;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+html{
+    font-family: var(--body-font);
+    font-size: 16px;
+}
+
+/* ////////////////////////////////////////////////////////////// */
+
+/* Navbar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 20px; */
+}
+
+.front-nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.front-off{
+    display: none;
+}
+
+.navicon {
+    position: absolute;
+    left: 0;
+    color: var(--rich-black);
+    margin: 20px;
+}
+
+.logo{
+    margin: 0 auto;
+    display: block;
+}
+
+/* Inside Nav */
+.inside-nav{
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgb(250, 210, 244); */
+    display: none;
+}
+
+
+.inside-on{
+    display: block;
+    background: linear-gradient(to left, white 50%, rgb(250, 210, 244) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    animation: slideBg 0.5s ease-in forwards;
+}
+
+.change-bg{
+    background: linear-gradient(to right, rgb(250, 210, 244) 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    animation: slide 0.5s ease-in forwards;
+}
+
+/* animation changing the bg color from white to pink */
+@keyframes slideBg {
+    from {
+        background-position: right bottom;
+    }
+    to {
+        background-position: left bottom;
+    }
+}
+
+@keyframes slide {
+    from {
+        background-position: left bottom;
+    }
+    to {
+        background-position: right bottom;
+       
+    }
+}
+
+
+/* ////////////////////////////////////// */
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-top img{
+    margin: 0 5px;
+}
+
+.X-icon{
+    color: black;
+    margin: 0 30px;
+}
+
+.inside-nav-links{
+    display: block;
+    margin: 20px 0 0 0px ;
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--rich-black);
+    font-size: 1.2rem;
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////// */
+/* hero */
+
+.hero{
+    width: 100%; height: 300px;
+    border-top: 2px solid brown;
+    background-color: var(--bright-pink-crayola);
+}
+
