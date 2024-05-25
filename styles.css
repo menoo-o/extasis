@@ -11,6 +11,7 @@
     --tea-rose-red: #deaaafff;
     --cornsilk: #f6f1d2ff;
     --rich-black: #010217ff;
+    --pinkish:#eb0ac5;
 
     /* fonts */
     --headings: "Allura", sans-serif;
@@ -73,17 +74,17 @@ nav {
 
 .inside-on{
     display: block;
-    background: linear-gradient(to left, white 50%, rgb(250, 210, 244) 50%);
+    background: linear-gradient(to left, white 50%, #4d0808 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     animation: slideBg 0.5s ease-in forwards;
 }
 
 .change-bg{
-    background: linear-gradient(to right, rgb(250, 210, 244) 50%, white 50%);
+    background: linear-gradient(to right, #4d0808 50%, white 50%);
     background-size: 200% 100%;
     background-position: left bottom;
-    animation: slide 0.5s ease-in forwards;
+    animation: slide 0.3s ease-in forwards;
 }
 
 /* animation changing the bg color from white to pink */
@@ -120,7 +121,7 @@ nav {
 }
 
 .X-icon{
-    color: black;
+    color: rgb(243, 243, 243);
     margin: 0 30px;
 }
 
@@ -129,7 +130,7 @@ nav {
     margin: 20px 0 0 0px ;
     margin-left: 20px;
     text-decoration: none;
-    color: var(--rich-black);
+    color: var(--bright-pink-crayola);
     font-size: 1.2rem;
 }
 
