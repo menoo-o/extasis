@@ -29,9 +29,9 @@ xIcon.addEventListener("click", () =>{
 //changing hero imgs
 //////////////////
 
-const images = ['./pics/logo/hero1.png', './pics/logo/hero2.png', './pics/logo/hero4.png', './pics/logo/hero3.jpg'];
+const images = ['./pics/logo/hero1.png', './pics/logo/hero2.png', './pics/logo/hero4.png', './pics/logo/hero3.png'];
 
-let currentIndex = 1;
+let currentIndex = 0;
 
 function changeImage() {
     const heroImg = document.querySelector('.hero-image'); // Select the image element
