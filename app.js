@@ -6,6 +6,10 @@ const insideNav = document.querySelector('.inside-nav')
 const mainTag = document.querySelector("main");
 
 
+
+//////////////////////////////////////////
+//nav color changes & nav open close (mobile)
+////////////////////////////////////////////
 navBtn.addEventListener("click", function(){
     frontNav.classList.add('front-off')
     insideNav.classList.add('inside-on')
@@ -20,3 +24,20 @@ xIcon.addEventListener("click", () =>{
     mainTag.classList.remove('main-off');
 
 });
+
+///////////////////////////////////////////////////////////
+//changing hero imgs
+//////////////////
+
+const images = ['./pics/logo/hero1.png', './pics/logo/hero2.png', './pics/logo/hero4.png', './pics/logo/hero3.jpg'];
+
+let currentIndex = 1;
+
+function changeImage() {
+    const heroImg = document.querySelector('.hero-image'); // Select the image element
+    heroImg.src = images[currentIndex]; // Update the src attribute
+    currentIndex = (currentIndex + 1) % images.length; // Update the index
+}
+
+// Change image every 4 seconds
+setInterval(changeImage, 4000);
