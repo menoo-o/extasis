@@ -29,7 +29,7 @@ xIcon.addEventListener("click", () =>{
 //changing hero imgs
 //////////////////
 
-const images = ['./pics/logo/hero1.png', './pics/logo/hero2.png', './pics/logo/hero4.png', './pics/logo/hero3.png'];
+const images = [ './pics/logo/hero2.png', './pics/logo/hero4.png', './pics/logo/hero3.png', './pics/logo/hero1.png'];
 
 let currentIndex = 0;
 
