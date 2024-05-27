@@ -4,6 +4,7 @@ const xIcon = document.querySelector('.X-icon')
 const frontNav = document.querySelector('.front-nav')
 const insideNav = document.querySelector('.inside-nav')
 const mainTag = document.querySelector("main");
+const footer = document.querySelector('.footer')
 
 
 
@@ -15,6 +16,8 @@ navBtn.addEventListener("click", function(){
     insideNav.classList.add('inside-on')
     body.classList.remove('change-bg')
     mainTag.classList.add('main-off')
+    footer.classList.add('footer-off')
+
 });
 
 xIcon.addEventListener("click", () =>{
@@ -22,6 +25,7 @@ xIcon.addEventListener("click", () =>{
     frontNav.classList.remove('front-off')
     body.classList.add('change-bg')
     mainTag.classList.remove('main-off');
+    footer.classList.remove('footer-off')
 
 });
 
